@@ -118,26 +118,45 @@ particlesJS("particles-js", {
     retina_detect: true,
 });
 
-// Reset form fields after submission
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the form from submitting
 
-    // Clear input fields
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to clear form fields
+    function clearFormFields() {
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+    }
 
-    // Optionally, you can add a success message or any other action here
-    alert("Message sent successfully!"); // Example alert
+    // Clear fields when page loads
+    clearFormFields();
+
+    // Clear fields when page becomes visible again
+    document.addEventListener('visibilitychange', function () {
+        if (!document.hidden) {
+            clearFormFields();
+        }
+    });
+
+    // Optional: Clear fields on form submission
+    document.getElementById('contactForm').addEventListener('submit', function () {
+        // Use setTimeout to clear fields after form submission
+        setTimeout(clearFormFields, 100);
+    });
 });
 
-// Smooth scroll to top
-document.querySelector('.back-to-top a').addEventListener('click', function (e) {
-    e.preventDefault();
 
-    // Scroll to top smoothly
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+// Smooth scroll to top
+// Back to top button
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+        $('.back-to-top').fadeIn('slow');
+    } else {
+        $('.back-to-top').fadeOut('slow');
+    }
+});
+
+$('.back-to-top').click(function (event) {
+    event.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 800);
+    return false;
 });
