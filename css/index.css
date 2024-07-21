@@ -1,0 +1,291 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1,
+.hero p,
+.hero .profession {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.hero .profession {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.skills {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 40px;
+}
+
+.skills .skill {
+  margin-bottom: 20px;
+}
+
+.projects {
+  padding: 50px 0;
+  background-color: #111;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.project-card {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  margin-bottom: 1rem;
+}
+
+.tech-stack .badge {
+  margin-right: 5px;
+  font-size: 0.9em;
+  padding: 0.4em 0.7em;
+  background-color: #444;
+  color: #fff;
+}
+
+.project-links .btn {
+  border-radius: 20px;
+  padding: 8px 20px;
+  margin: 0 5px;
+  font-size: 0.9rem;
+}
+
+.project-links .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.project-links .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.carousel-indicators li {
+  background-color: #666;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.animate__animated.animate__fadeInUp {
+  animation-duration: 1s;
+}
+
+.contact {
+  padding: 80px 0;
+  background-color: #111;
+  text-align: center;
+  color: #fff;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #222;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact form label {
+  color: #fff;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #0056b3;
+}
+
+.contact .social-links {
+  margin-top: 20px;
+}
+
+.contact .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.contact .social-links a:hover {
+  color: #007bff;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.back-to-top a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top a:hover {
+  background-color: #0056b3;
+}
+
+.back-to-top a i {
+  transform: translateY(2px);
+}
+
+/* Hide back-to-top initially */
+.back-to-top {
+  display: none;
+}
