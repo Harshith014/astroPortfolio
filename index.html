@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
 
   <body>
@@ -237,18 +237,21 @@
                     class="card project-card shadow-lg animate__animated animate__fadeInUp"
                   >
                     <div class="card-body">
-                      <h3 class="card-title">Food Order App</h3>
+                      <h3 class="card-title">Affame</h3>
                       <p class="card-text">
-                        Built with MERN stack. Features include admin and user
-                        roles with JWT authentication. Admins can manage the
-                        menu (CRUD operations), while users can view and order
-                        items.
+                        Built with MERN stack and Stripe. Features include
+                        role-based authorization, cart functionality, and secure
+                        payment processing via Stripe. Admins can manage the
+                        menu and process orders through a dedicated dashboard.
                       </p>
                       <div class="tech-stack mb-3">
                         <span class="badge badge-primary">React</span>
                         <span class="badge badge-success">Node.js</span>
                         <span class="badge badge-info">MongoDB</span>
                         <span class="badge badge-warning">Express</span>
+                        <span class="badge badge-warning">MUI</span>
+                        <span class="badge badge-warning">Stripe</span>
+                        <span class="badge badge-warning">Context Api</span>
                       </div>
                       <div class="project-links">
                         <a
@@ -276,11 +279,13 @@
                     class="card project-card shadow-lg animate__animated animate__fadeInUp"
                   >
                     <div class="card-body">
-                      <h3 class="card-title">Chat App</h3>
+                      <h3 class="card-title">Chat Website</h3>
                       <p class="card-text">
-                        Built with MERN stack and socket.io. Features include
-                        real-time chat, voice messaging, and file uploads
-                        (images/documents). Users can customize chat themes.
+                        Built with MERN stack and Socket.IO. Features include
+                        real-time messaging with emoji support, voice messages,
+                        and text translation via Google Translate API.
+                        Integrated Cloudinary for image and document storage,
+                        and used JWT and Bcrypt for secure authentication.
                       </p>
                       <div class="tech-stack mb-3">
                         <span class="badge badge-primary">React</span>
@@ -288,6 +293,8 @@
                         <span class="badge badge-info">MongoDB</span>
                         <span class="badge badge-warning">Express</span>
                         <span class="badge badge-danger">Socket.io</span>
+                        <span class="badge badge-danger">MUI</span>
+                        <span class="badge badge-danger">Context Api</span>
                       </div>
                       <div class="project-links">
                         <a
@@ -298,6 +305,95 @@
                         >
                         <a
                           href="https://github.com/Harshith014/chat-app"
+                          class="btn btn-secondary"
+                          target="_blank"
+                          >Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                  <div
+                    class="card project-card shadow-lg animate__animated animate__fadeInUp"
+                  >
+                    <div class="card-body">
+                      <h3 class="card-title">MCQ</h3>
+                      <p class="card-text">
+                        Built with MERN stack and Node-cron. Features include
+                        secure test-taking environments with role-based
+                        authorization, camera/microphone permissions, and JWT
+                        authentication. Admins can manage tests, and automated
+                        score evaluations are handled via Node-cron. Nodemailer
+                        with Pug templates is used for email notifications.
+                      </p>
+                      <div class="tech-stack mb-3">
+                        <span class="badge badge-primary">React</span>
+                        <span class="badge badge-success">Node.js</span>
+                        <span class="badge badge-info">MongoDB</span>
+                        <span class="badge badge-warning">Express</span>
+                        <span class="badge badge-warning">Context Api</span>
+                        <span class="badge badge-danger">Shadcn UI</span>
+                        <span class="badge badge-danger">Tailwind css</span>
+                        <span class="badge badge-danger">Nodemailer</span>
+                        <span class="badge badge-danger">Node-cron</span>
+                        <span class="badge badge-danger">Pug</span>
+                      </div>
+                      <div class="project-links">
+                        <a
+                          href="https://mcq-lime.vercel.app/"
+                          class="btn btn-primary mr-2"
+                          target="_blank"
+                          >Live Demo</a
+                        >
+                        <a
+                          href="https://github.com/Harshith014/CipherSchools"
+                          class="btn btn-secondary"
+                          target="_blank"
+                          >Source Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                  <div
+                    class="card project-card shadow-lg animate__animated animate__fadeInUp"
+                  >
+                    <div class="card-body">
+                      <h3 class="card-title">Quizz</h3>
+                      <p class="card-text">
+                        Built with MERN stack and Redux. Features include room
+                        creation and joining functionality, user authentication
+                        using JWT, and leaderboard updates. Utilized
+                        React-Bootstrap for an interactive UI and MongoDB for
+                        data storage.
+                      </p>
+                      <div class="tech-stack mb-3">
+                        <span class="badge badge-primary">React</span>
+                        <span class="badge badge-success">Node.js</span>
+                        <span class="badge badge-info">MongoDB</span>
+                        <span class="badge badge-warning">Express</span>
+                        <span class="badge badge-danger">React-Bootstrap</span>
+                        <span class="badge badge-danger">Redux</span>
+                      </div>
+                      <div class="project-links">
+                        <a
+                          href="https://quizz-ten-eta.vercel.app/"
+                          class="btn btn-primary mr-2"
+                          target="_blank"
+                          >Live Demo</a
+                        >
+                        <a
+                          href="https://github.com/Harshith014/quizz"
                           class="btn btn-secondary"
                           target="_blank"
                           >Source Code</a
@@ -381,7 +477,11 @@
           <button type="submit" class="btn btn-primary">Send</button>
         </form>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/sai-harshith-m-4409b831a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a
+            href="https://www.linkedin.com/in/harshith-m-4409b831a/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
           <a href="https://github.com/Harshith014" target="_blank"
             ><i class="fab fa-github"></i
           ></a>
@@ -397,11 +497,10 @@
         <i class="fas fa-arrow-up"></i>
       </a>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
